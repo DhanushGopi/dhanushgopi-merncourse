@@ -1,0 +1,15 @@
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.errorred {
+    border: 2px solid red;
+}
+
+.noterrorred {
+    border: 1px solid black;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input_id" type="text" placeholder="Enter the name">
+    <h1 id="h1name">Hello World</h1>
+    <h2 id="h2name">Hellow World</h2>
+    <h2 id="h3name">Hellow World</h2>
+    <a onclick="changeText()" id="btn">Click me!</a>
+</body>
+<script src="./dom.js"></script>
+<!--The resaon why keeping the js in below body to avoid the conflict of the needed object in the meantime of loading the files.
+and sometimes we can have the script in the head but it should not be needed on the loading time.-->
+
+</html>
