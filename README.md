@@ -1,1 +1,1 @@
-# dhanush gopi mern course repo
+## MERN Stack Course Repo
