@@ -1,0 +1,641 @@
+/*
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --white1: #fff;
+  --grey1: #F6F6F6;
+  --grey2: #ADADAD;
+  --blue1: #0061C8;
+  --black1: #1E1E1E;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--grey1);
+}
+
+/*navbar*/
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--grey2);
+  border-radius: 0px 0px 32px 32px;
+  background-color: var(--white1);
+  position: sticky;
+}
+
+#dsblogo {
+  width: 200px;
+
+}
+
+/*Hero*/
+.herosec {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.herotext {
+  font-size: 48px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  text-align: justify;
+  line-height: 48px;
+}
+
+.handtext {
+  font-family: "Gloria Hallelujah", cursive;
+  line-height: 40px;
+  color: var(--blue1);
+}
+
+#dhanushgopi {
+  width: 600px;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+/*Gallery*/
+.gallery {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.galleryrow {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+
+}
+
+.prevpage {
+  width: 350px;
+  height: fit-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(1);
+  border-radius: 25px;
+
+}
+
+.prevpage:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.prevdetails {
+  width: 50px;
+  height: 354px;
+  background: rgb(30, 30, 30);
+  background: linear-gradient(0deg, rgba(0, 97, 200, 0.5) 5%, rgba(0, 97, 200, 0) 35%, rgba(30, 97, 200, 0) 85%, rgba(0, 97, 200, 0) 100%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 75px 150px;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+.prevdetails:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.prevbtn {
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--blue1);
+  background-color: var(--white1);
+  padding: 15px 25px;
+  border-radius: 100px;
+}
+
+.viewmorepage {
+  width: 350px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewmore {
+  width: 300px;
+  font-size: 20px;
+  height: 200px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--blue1);
+  background-color: var(--white1);
+  padding: 15px 25px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.viewmore:hover {
+  color: var(--white1);
+  background-color: var(--blue1);
+  height: 300px;
+  border-radius: 25px 200px 200px 25px;
+  transition: 0.5s;
+}
+
+
+.prevpage2 {
+  background-image: url(../assest/sb2.jpg);
+}
+
+.prevpage3 {
+  background-image: url(../assest/sb3.jpg);
+
+}
+
+.prevpage4 {
+  background-image: url(../assest/sb4.jpg);
+
+}
+
+.prevpage5 {
+  background-image: url(../assest/sb5.jpg);
+
+}
+
+.prevpage6 {
+  background-image: url(../assest/sb6.jpg);
+}
+
+.prevpage7 {
+  background-image: url(../assest/sb7.jpg);
+}
+
+.prevpage8 {
+  background-image: url(../assest/sb8.jpg);
+}
+
+.prevpage9 {
+  background-image: url(../assest/sb9.jpg);
+}
+
+/*Contact - Social*/
+
+.contact {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 25px;
+}
+
+.socialpages {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.social {
+  width: 350px;
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  background-color: var(--white1);
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--blue1);
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+.instagram:hover {
+  background: rgb(62, 0, 255);
+  background: linear-gradient(211deg, rgba(62, 0, 255, 1) 0%, rgba(225, 0, 255, 1) 35%, rgba(255, 109, 0, 1) 69%, rgba(255, 229, 0, 1) 100%);
+  color: var(--white1);
+  transition: 0.5s;
+}
+
+.linkedin:hover {
+  background: #009dff;
+  color: var(--white1);
+  transition: 0.5s;
+}
+
+.behance:hover {
+  background: #0031ff;
+  color: var(--white1);
+  transition: 0.5s;
+}
+
+/* Contact Form*/
+.form {
+  width: 665px;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white1);
+  border-radius: 25px;
+}
+
+.switchbtn {
+  background-color: var(--grey1);
+  border-radius: 100px;
+}
+
+.activebtn {
+  color: var(--white1);
+  background-color: var(--black1);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.unactivebtn {
+  color: var(--grey2);
+  background-color: var(--grey1);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.loginform {
+  width: 665px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.registerform {
+  width: 665px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.formhide {
+  display: none;
+  transition: 0.5s;
+}
+
+.inputlabel {
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.inputfields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputfield {
+  background-color: var(--grey1);
+  width: 620px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  outline: none;
+  transition: 0.5s;
+}
+
+.inputfield:focus {
+  background-color: rgba(0, 97, 200, 0.1);
+  transition: 0.1s;
+}
+
+.submitbtn {
+  background-color: var(--blue1);
+  padding: 15px 35px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--white1);
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.submitbtn:hover {
+  filter: grayscale(0.3);
+  transition: 0.5s;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  padding: 25px 0px;
+  border-top: 2px solid var(--grey2);
+  border-radius: 32px 32px 0px 0px;
+  background-color: var(--white1);
+}
+
+/* Sketch Book page*/
+
+.dailogue {
+  font-size: 36px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* Sketch Pages*/
+
+.sketchpages {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sketchpage {
+  width: 1040px;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white1);
+  padding: 20px;
+  border-radius: 32px;
+  margin-bottom: 20px;
+}
+
+.sketch {
+  width: 420px;
+  border-radius: 16px;
+}
+
+.sketchdetails {
+  width: 620px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.sketchupper {
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sketchlabel {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--black1);
+}
+
+.sketchshare {
+  background-color: var(--blue1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--white1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sketchdesc {
+  width: 580px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--grey2);
+}
+
+.sketchdesc sup {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey2);
+}
+
+
+.sketchbtn {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sketchnav {
+  width: 225px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movebtn {
+  background-color: var(--white1);
+  padding: 15px 35px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--blue1);
+  text-decoration: none;
+  border: 2px solid var(--blue1);
+}
+
+.movebtn:hover {
+  filter: grayscale(0.3);
+  cursor: pointer;
+  background-color: var(--grey1);
+}
+
+.activesketch {
+  display: flex;
+}
+
+
+/*Socil in Sketch Pages*/
+.spsocial {
+  width: 1080px;
+  flex-direction: row;
+}
