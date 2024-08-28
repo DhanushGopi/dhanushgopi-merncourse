@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dhanushgopi-merncourse/weekend2tasks/static/css/main.04cc7762.css",
+    "main.js": "/dhanushgopi-merncourse/weekend2tasks/static/js/main.275008ae.js",
+    "static/js/453.4e7540c3.chunk.js": "/dhanushgopi-merncourse/weekend2tasks/static/js/453.4e7540c3.chunk.js",
+    "index.html": "/dhanushgopi-merncourse/weekend2tasks/index.html",
+    "main.04cc7762.css.map": "/dhanushgopi-merncourse/weekend2tasks/static/css/main.04cc7762.css.map",
+    "main.275008ae.js.map": "/dhanushgopi-merncourse/weekend2tasks/static/js/main.275008ae.js.map",
+    "453.4e7540c3.chunk.js.map": "/dhanushgopi-merncourse/weekend2tasks/static/js/453.4e7540c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04cc7762.css",
+    "static/js/main.275008ae.js"
+  ]
+}
